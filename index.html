@@ -54,15 +54,15 @@
         background: #efefef;
       }
     </style>
-    <script src="socket.io/socket.io.js" defer></script>
-    <script defer>
-      let socket = io();
-    </script>
   </head>
   <body>
     <ul id="messages"></ul>
     <form id="form" action="">
       <input id="input" autocomplete="off" /><button>Send</button>
     </form>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      var socket = io();
+    </script>
   </body>
 </html>
